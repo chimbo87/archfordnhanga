@@ -10,6 +10,7 @@ import RootLayOut from "./components/roots/RootLayOut";
 import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
 import Contacts from "./pages/contacts/Contacts";
+import ProjectDetails from './pages/projects/components/ProjectDetails';
 
 function App() {
   const router = createBrowserRouter(
@@ -19,6 +20,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
         <Route path="contacts" element={<Contacts />} />
+        <Route path="project-details" element={<ProjectDetails/>} />
       </Route>
     )
   );
