@@ -16,6 +16,14 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
+  // WhatsApp integration
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '+27677366141';
+    const message = encodeURIComponent("Hello Archford! I came across your portfolio and I'm interested in discussing potential opportunities. Could we schedule a time to talk?");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+    setIsOpen(false); // Close mobile menu if open
+  };
+
   // Close mobile menu when navigating
   const handleNavigation = () => {
     setIsOpen(false);
@@ -29,10 +37,28 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link 
               to="/" 
-              className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
+              className="flex items-center space-x-2 group"
               onClick={handleNavigation}
             >
-              ARCHFORD
+              {/* Logo Icon */}
+              <div className="relative">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 via-purple-600 to-green-500 rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:shadow-blue-500/30 transition-all duration-300 group-hover:scale-105">
+                  <div className="w-8 h-8 bg-gray-900 rounded-md flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">A</span>
+                  </div>
+                </div>
+
+              </div>
+              
+              {/* Logo Text */}
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent group-hover:from-blue-300 group-hover:via-purple-400 group-hover:to-green-300 transition-all duration-300">
+                  ARCHFORD
+                </span>
+                <span className="text-xs text-slate-400 -mt-1 tracking-wider">
+                  developer
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -55,12 +81,12 @@ const Navbar = () => {
                   }`}></span>
                 </Link>
               ))}
-              <Link
-                to="/contacts"
-                className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+              <button
+                onClick={handleWhatsAppClick}
+                className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105"
               >
                 Let's Talk
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -68,13 +94,13 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-all duration-200"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
                 <svg
-                  className="block h-6 w-6"
+                  className="block h-6 w-6 transition-transform duration-200"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -90,7 +116,7 @@ const Navbar = () => {
                 </svg>
               ) : (
                 <svg
-                  className="block h-6 w-6"
+                  className="block h-6 w-6 transition-transform duration-200 rotate-90"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -128,13 +154,12 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contacts"
-              className="bg-gradient-to-r from-blue-500 to-green-500 text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-4 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
-              onClick={handleNavigation}
+            <button
+              onClick={handleWhatsAppClick}
+              className="bg-gradient-to-r from-blue-500 to-green-500 text-white block w-full px-3 py-2 rounded-md text-base font-medium text-center mt-4 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
             >
               Let's Talk
-            </Link>
+            </button>
           </div>
         </div>
       )}

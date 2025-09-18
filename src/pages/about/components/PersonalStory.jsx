@@ -9,7 +9,7 @@ const PersonalStory = () => {
           <div className="inline-block px-4 py-1 mb-4 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium">
             My Journey
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             From Curiosity to 
             <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"> Code</span>
           </h2>
@@ -102,11 +102,11 @@ const PersonalStory = () => {
             {/* Highlights */}
             <div className="grid grid-cols-3 gap-4">
               <div className="bg-gray-800 p-4 rounded-lg text-center border border-gray-700 hover:border-blue-500 transition-colors duration-300">
-                <span className="block text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">2+</span>
+                <span className="block text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">5+</span>
                 <span className="text-slate-400 text-sm">Years Coding</span>
               </div>
               <div className="bg-gray-800 p-4 rounded-lg text-center border border-gray-700 hover:border-blue-500 transition-colors duration-300">
-                <span className="block text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">15+</span>
+                <span className="block text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">50+</span>
                 <span className="text-slate-400 text-sm">Projects Built</span>
               </div>
               <div className="bg-gray-800 p-4 rounded-lg text-center border border-gray-700 hover:border-blue-500 transition-colors duration-300">

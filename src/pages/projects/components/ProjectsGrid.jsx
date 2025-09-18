@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
-
+import project01 from "../../../assets/images/thread.png";
+import project02 from "../../../assets/images/gigbee.png";
+import project03 from "../../../assets/images/chats.png";
+import project04 from "../../../assets/images/radid.png";
+import project05 from "../../../assets/images/gold.png";
+import project06 from "../../../assets/images/medical.png";
+import project07 from "../../../assets/images/marangesi.png";
+import project08 from "../../../assets/images/dolphine.png";
 const ProjectsGrid = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
 
@@ -8,66 +15,66 @@ const ProjectsGrid = () => {
   const projects = [
     {
       id: 1,
-      name: "E-Commerce Platform",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      techStack: ["React", "Node.js", "MongoDB", "Tailwind"],
-      liveLink: "#",
+      name: "Social Media (Thread Clone)",
+      image: project01,
+      techStack: ["React", "Node.js", "MongoDB", "Tailwind","Socket IO"],
+      liveLink: "https://social-media-app-15pq.onrender.com/",
       githubLink: "#"
     },
     {
       id: 2,
-      name: "Task Management App",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1139&q=80",
-      techStack: ["Vue.js", "Firebase", "CSS3"],
-      liveLink: "#",
+      name: "Job Freelance App",
+      image: project02,
+      techStack: ["React", "Node.js", "MongoDB", "Tailwind","Socket IO"],
+      liveLink: "https://simba-2nc0.onrender.com/login",
       githubLink: "#"
     },
     {
       id: 3,
-      name: "Weather Dashboard",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1165&q=80",
-      techStack: ["JavaScript", "API", "HTML5"],
-      liveLink: "#",
+      name: "Chat App",
+      image: project03,
+      techStack: ["MongoDB, Express, React, and Node.js"],
+      liveLink: "https://chimbo-chat-app.onrender.com/login",
       githubLink: "#"
     },
     {
       id: 4,
-      name: "Social Media Analytics",
-      image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      techStack: ["React", "Chart.js", "Express", "PostgreSQL"],
-      liveLink: "#",
+      name: "Construction Website",
+      image: project04,
+      techStack: ["React", "React js","Tailwind Css"],
+      liveLink: "https://radid-constructions.vercel.app/",
       githubLink: "#"
     },
     {
       id: 5,
-      name: "Fitness Tracker",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      techStack: ["React Native", "Redux", "MongoDB"],
-      liveLink: "#",
+      name: "Business website",
+      image: project05,
+      techStack: ["React", "React js","Tailwind Css"],
+      liveLink: "https://www.gold4africa.com/",
       githubLink: "#"
     },
     {
       id: 6,
-      name: "Recipe Finder App",
-      image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1326&q=80",
-      techStack: ["Angular", "Spoonacular API", "Bootstrap"],
-      liveLink: "#",
+      name: "Medical Website",
+      image: project06,
+      techStack: ["Angular", "Bootstrap"],
+      liveLink: "https://www.mitralclinic.org/",
       githubLink: "#"
     },
     {
       id: 7,
-      name: "Real Estate Listings",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80",
-      techStack: ["Next.js", "Mapbox", "Tailwind", "PostgreSQL"],
-      liveLink: "#",
+      name: "E-commerce",
+      image: project07,
+      techStack: ["React", "Node", "Tailwind", "PostgreSQL"],
+      liveLink: "https://www.marangasei-market.co.za/",
       githubLink: "#"
     },
     {
       id: 8,
-      name: "Portfolio Website",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
+      name: "Borehole Drilling Website",
+      image: project08,
       techStack: ["React", "Tailwind", "Framer Motion"],
-      liveLink: "#",
+      liveLink: "https://dolphine-boreholes.vercel.app/",
       githubLink: "#"
     }
   ];

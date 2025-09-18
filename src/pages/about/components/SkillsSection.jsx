@@ -10,13 +10,13 @@ const SkillsSection = () => {
     },
     { 
       name: 'JavaScript', 
-      level: 'Expert',
+      level: 'Intermediate',
       icon: '🟨',
       color: '#F7DF1E'
     },
     { 
       name: 'Node.js', 
-      level: 'Advanced',
+      level: 'Intermediate',
       icon: '🟢',
       color: '#339933'
     },

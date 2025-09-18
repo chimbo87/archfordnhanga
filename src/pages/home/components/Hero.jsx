@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import profilepic from "../../../assets/images/wallpaper02.png";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -120,12 +122,15 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start">
               <button
                 className="bg-gradient-to-r from-blue-500 to-green-500 text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-4 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 d-flex"
-                onClick={() => handleScroll("projects")}
+                onClick={() => navigate("/projects")}
               >
                 <span>View My Work</span>
               </button>
 
-              <button className="bg-transparent text-white border border-white block px-3 py-2 rounded-md text-base font-medium text-center mt-4 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300">
+              <button
+                className="bg-transparent text-white border border-white block px-3 py-2 rounded-md text-base font-medium text-center mt-4 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+                onClick={() => navigate("/contacts")}
+              >
                 <span>Contact Me</span>
               </button>
             </div>
