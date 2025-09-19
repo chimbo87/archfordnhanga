@@ -1,22 +1,39 @@
 import project01 from "../../../assets/images/thread.png";
-import project02 from "../../../assets/images/gigbee.png";
-import project03 from "../../../assets/images/chats.png";
-import project04 from "../../../assets/images/radid.png";
-import project05 from "../../../assets/images/gold.png";
-import project06 from "../../../assets/images/medical.png";
-import project07 from "../../../assets/images/marangesi.png";
-import project08 from "../../../assets/images/dolphine.png";
+import gigbee from "../../../assets/images/gigbee.png";
+import gigbee01 from "../../../assets/images/gigbee01.png";
+import gigbee02 from "../../../assets/images/gigbee02.png";
+import gigbee03 from "../../../assets/images/gigbee03.png";
+
+import trots01 from "../../../assets/images/trots01.png";
+import trots02 from "../../../assets/images/trots02.png";
+import trots03 from "../../../assets/images/trots03.png";
+import trots04 from "../../../assets/images/trots04.png";
+
+import radid01 from "../../../assets/images/radid01.png";
+import radid02 from "../../../assets/images/radid02.png";
+import radid03 from "../../../assets/images/radid03.png";
+import radid04 from "../../../assets/images/radid04.png";
+
+import mara01 from "../../../assets/images/mara01.png";
+import mara02 from "../../../assets/images/mara02.png";
+import mara03 from "../../../assets/images/mara03.png";
+import mara04 from "../../../assets/images/mara04.png";
+
+import gol01 from "../../../assets/images/gol01.png";
+import gol02 from "../../../assets/images/gol02.png";
+import gol03 from "../../../assets/images/gol03.png";
+import gol04 from "../../../assets/images/gol04.png";
 const projects = [
   {
     id: 1,
     name: "Job Freelance App",
-    shortDescription: "A full-featured e-commerce platform built with modern web technologies",
-    fullDescription: "This comprehensive e-commerce platform provides a complete shopping experience with advanced features like real-time inventory management, secure payment processing, and an intuitive admin dashboard. The application is built with scalability in mind, featuring microservices architecture and cloud deployment capabilities.",
+    shortDescription: "A comprehensive freelance marketplace connecting clients with skilled professionals",
+    fullDescription: "This freelance platform enables seamless collaboration between clients and freelancers with features like real-time messaging, project management tools, secure payment processing, and portfolio showcasing. The application includes advanced job matching algorithms, review systems, and a user-friendly dashboard for managing projects, proposals, and earnings.",
     images: [
-      project02,
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1556742111-a301076d9d18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      gigbee,
+      gigbee01,
+      gigbee02,
+      gigbee03
     ],
     techStack: [
       { name: "React", category: "Frontend", color: "#61DAFB" },
@@ -25,351 +42,348 @@ const projects = [
       { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
       { name: "Express.js", category: "Backend", color: "#000000" },
       { name: "JWT", category: "Authentication", color: "#000000" },
-      // { name: "Stripe API", category: "Payment", color: "#635BFF" },
-      // { name: "AWS S3", category: "Storage", color: "#FF9900" }
+      { name: "Socket.io", category: "Real-time", color: "#010101" },
+      { name: "Cloudinary", category: "Media Storage", color: "#3448C5" }
     ],
     features: [
       {
-        icon: "🛒",
-        title: "Shopping Cart",
-        description: "Advanced cart management with persistent storage and real-time updates"
+        icon: "👤",
+        title: "User Authentication",
+        description: "Secure registration and login system with role-based access for clients and freelancers"
       },
       {
-        icon: "💳",
+        icon: "💬",
+        title: "Real-time Chat",
+        description: "Instant messaging system for seamless communication between clients and freelancers"
+      },
+      {
+        icon: "📋",
+        title: "Project Management",
+        description: "Complete project tracking with milestones, deadlines, and progress monitoring"
+      },
+      {
+        icon: "💰",
         title: "Secure Payments",
-        description: "Integration with Stripe for secure and reliable payment processing"
-      },
-      {
-        icon: "👥",
-        title: "User Management",
-        description: "Complete user authentication system with role-based access control"
-      },
-      {
-        icon: "📊",
-        title: "Admin Dashboard",
-        description: "Comprehensive admin panel for managing products, orders, and users"
-      },
-      {
-        icon: "📱",
-        title: "Responsive Design",
-        description: "Fully responsive design that works seamlessly across all devices"
-      },
-      {
-        icon: "🔍",
-        title: "Search & Filter",
-        description: "Advanced search functionality with multiple filtering options"
+        description: "Escrow payment system with secure transactions and dispute resolution"
       },
       {
         icon: "⭐",
-        title: "Product Reviews",
-        description: "Customer review and rating system with moderation capabilities"
+        title: "Rating System",
+        description: "Comprehensive review and rating system to build trust and reputation"
       },
       {
-        icon: "📧",
-        title: "Email Integration",
-        description: "Automated email notifications for orders, shipping, and promotions"
+        icon: "🔍",
+        title: "Smart Job Matching",
+        description: "AI-powered job recommendations based on skills and preferences"
+      },
+      {
+        icon: "📄",
+        title: "Resume Builder",
+        description: "Professional resume generator with customizable templates"
+      },
+      {
+        icon: "📊",
+        title: "Dashboard Analytics",
+        description: "Detailed earnings reports and performance analytics for freelancers"
       }
     ],
     liveLink: "https://simba-2nc0.onrender.com/login",
     githubLink: "#",
-    status: "Completed",
+    status: "Inprogress",
     duration: "3 months",
     role: "Full Stack Developer",
     challenges: [
-      "Implementing real-time inventory updates across multiple product variants",
-      "Optimizing database queries for large product catalogs",
-      "Ensuring PCI compliance for payment processing",
-      "Building a scalable microservices architecture"
+      "Implementing real-time notifications and chat functionality",
+      "Building secure payment escrow system with refund capabilities",
+      "Developing efficient job matching algorithms",
+      "Ensuring data privacy and security for user information"
     ],
     learnings: [
-      "Advanced React patterns and state management with Redux Toolkit",
-      "MongoDB aggregation pipelines for complex data operations",
-      "AWS deployment and cloud infrastructure management",
-      "Payment gateway integration and security best practices"
+      "Real-time communication implementation with Socket.io",
+      "Payment gateway integration and financial transaction security",
+      "Advanced MongoDB queries for complex data relationships",
+      "User experience optimization for multi-role platforms"
     ]
   },
+
   {
     id: 2,
-    name: "Task Management App",
-    shortDescription: "A collaborative project management tool with real-time updates and team features",
-    fullDescription: "A comprehensive task management application designed for teams and individuals to streamline workflow and boost productivity. Features include real-time collaboration, advanced filtering, time tracking, and detailed analytics. Built with performance and scalability in mind to handle large teams and complex project structures.",
+    name: "Business Marketing App",
+    shortDescription: "A dynamic marketing platform for businesses to list services, post adverts, and engage with their community.",
+    fullDescription: "BizConnect Hub is a comprehensive marketing and community engagement platform designed to bridge the gap between businesses and customers. Businesses can create detailed listings, publish promotional adverts, and gain valuable insights through customer reviews and ratings. The platform fosters community interaction via a built-in blog and enhances business visibility through a searchable public directory. I was responsible for architecting and developing the entire responsive frontend, ensuring an intuitive and seamless user experience across all devices.",
     images: [
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-    ],
-    techStack: [
-      { name: "Vue.js", category: "Frontend", color: "#4FC08D" },
-      { name: "Laravel", category: "Backend", color: "#FF2D20" },
-      { name: "PostgreSQL", category: "Database", color: "#336791" },
-      { name: "Socket.io", category: "Real-time", color: "#010101" },
-      { name: "Redis", category: "Caching", color: "#DC382D" },
-      { name: "Docker", category: "DevOps", color: "#2496ED" },
-      { name: "Pusher", category: "Real-time", color: "#300D4F" }
-    ],
-    features: [
-      {
-        icon: "✅",
-        title: "Task Management",
-        description: "Create, assign, and track tasks with priority levels and due dates"
-      },
-      {
-        icon: "👥",
-        title: "Team Collaboration",
-        description: "Real-time collaboration with comments, mentions, and file sharing"
-      },
-      {
-        icon: "📊",
-        title: "Project Analytics",
-        description: "Detailed insights into team productivity and project progress"
-      },
-      {
-        icon: "⏱️",
-        title: "Time Tracking",
-        description: "Built-in time tracking with detailed reporting and invoicing"
-      },
-      {
-        icon: "🔔",
-        title: "Notifications",
-        description: "Real-time notifications via email, browser, and mobile push"
-      },
-      {
-        icon: "📱",
-        title: "Mobile App",
-        description: "Native mobile apps for iOS and Android with offline support"
-      }
-    ],
-    liveLink: "https://taskmanager-demo.com",
-    githubLink: "https://github.com/archford/task-manager",
-    status: "Completed",
-    duration: "4 months",
-    role: "Lead Developer",
-    challenges: [
-      "Implementing real-time updates without performance degradation",
-      "Building complex permission systems for team hierarchies",
-      "Optimizing database queries for large datasets",
-      "Creating intuitive drag-and-drop interfaces"
-    ],
-    learnings: [
-      "Vue 3 Composition API and advanced reactivity patterns",
-      "Laravel queues and job processing for background tasks",
-      "WebSocket implementation for real-time features",
-      "Mobile app development with React Native"
-    ]
-  },
-  {
-    id: 3,
-    name: "AI-Powered Analytics Dashboard",
-    shortDescription: "Advanced data visualization platform with machine learning insights",
-    fullDescription: "A sophisticated analytics dashboard that leverages artificial intelligence to provide actionable business insights. The platform processes large datasets in real-time, generates predictive models, and presents complex data through intuitive visualizations. Built for enterprise clients requiring advanced data analysis capabilities.",
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+      trots01,
+      trots02,
+      trots03,
+      trots04
     ],
     techStack: [
       { name: "React", category: "Frontend", color: "#61DAFB" },
-      { name: "Python", category: "Backend", color: "#3776AB" },
-      { name: "FastAPI", category: "Backend", color: "#009688" },
-      { name: "TensorFlow", category: "AI/ML", color: "#FF6F00" },
-      { name: "PostgreSQL", category: "Database", color: "#336791" },
-      { name: "D3.js", category: "Visualization", color: "#F79E16" },
-      { name: "Apache Kafka", category: "Streaming", color: "#231F20" },
-      { name: "Kubernetes", category: "DevOps", color: "#326CE5" }
+      { name: "TypeScript", category: "Frontend", color: "#3178C6" },
+      { name: "Context API", category: "State Management", color: "#6D31C6" },
+      { name: "React Query", category: "Data Fetching", color: "#FF4154" },
+      { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+      { name: "React Hook Form", category: "Forms", color: "#EC5990" },
+      { name: "Framer Motion", category: "Animation", color: "#000000" }
     ],
     features: [
       {
-        icon: "🤖",
-        title: "AI Insights",
-        description: "Machine learning algorithms for predictive analytics and trend analysis"
+        icon: "🏢",
+        title: "Business Listings",
+        description: "Businesses can create and manage detailed public profiles with services, hours, and contact info."
       },
       {
-        icon: "📊",
-        title: "Interactive Charts",
-        description: "Dynamic data visualizations with drill-down capabilities"
+        icon: "📢",
+        title: "Advert Management",
+        description: "Create, schedule, and publish targeted promotional campaigns to reach a wider audience."
       },
       {
-        icon: "⚡",
-        title: "Real-time Processing",
-        description: "Stream processing for live data updates and instant notifications"
-      },
-      {
-        icon: "🎯",
-        title: "Custom Metrics",
-        description: "Create and track custom KPIs with automated threshold alerts"
-      },
-      {
-        icon: "📱",
-        title: "Mobile Dashboard",
-        description: "Responsive design optimized for mobile executive dashboards"
-      },
-      {
-        icon: "🔐",
-        title: "Enterprise Security",
-        description: "Advanced security features with SSO and role-based access control"
-      }
-    ],
-    liveLink: "https://analytics-demo.com",
-    githubLink: "https://github.com/archford/ai-analytics",
-    status: "In Progress",
-    duration: "6 months",
-    role: "Senior Full Stack Developer",
-    challenges: [
-      "Processing and visualizing massive datasets efficiently",
-      "Implementing complex ML models in production environment",
-      "Creating intuitive interfaces for non-technical users",
-      "Ensuring data privacy and compliance with regulations"
-    ],
-    learnings: [
-      "Advanced Python data science libraries and frameworks",
-      "Machine learning model deployment and monitoring",
-      "Real-time data streaming with Apache Kafka",
-      "Complex data visualization techniques with D3.js"
-    ]
-  },
-  {
-    id: 4,
-    name: "Social Media Management Tool",
-    shortDescription: "Comprehensive platform for managing multiple social media accounts",
-    fullDescription: "A powerful social media management platform that enables businesses and agencies to manage multiple social media accounts from a single dashboard. Features include content scheduling, analytics reporting, team collaboration, and automated engagement tools. Designed to streamline social media workflows and improve engagement rates.",
-    images: [
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1553484771-371a605b060b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-    ],
-    techStack: [
-      { name: "Angular", category: "Frontend", color: "#DD0031" },
-      { name: "NestJS", category: "Backend", color: "#E0234E" },
-      { name: "MongoDB", category: "Database", color: "#47A248" },
-      { name: "Bull Queue", category: "Jobs", color: "#CC0000" },
-      { name: "OAuth", category: "Authentication", color: "#4285F4" },
-      { name: "AWS", category: "Cloud", color: "#FF9900" },
-      { name: "GraphQL", category: "API", color: "#E10098" }
-    ],
-    features: [
-      {
-        icon: "📅",
-        title: "Content Scheduler",
-        description: "Schedule posts across multiple platforms with optimal timing suggestions"
+        icon: "⭐",
+        title: "Reviews & Ratings",
+        description: "Customers can leave feedback and ratings, providing social proof and valuable insights for businesses."
       },
       {
         icon: "📈",
-        title: "Analytics Reports",
-        description: "Comprehensive analytics and reporting for all connected accounts"
+        title: "Insights Dashboard",
+        description: "Businesses get analytics on advert performance, customer engagement, and review trends."
       },
       {
-        icon: "👥",
-        title: "Team Management",
-        description: "Collaborate with team members and manage client accounts"
-      },
-      {
-        icon: "🎨",
-        title: "Content Creation",
-        description: "Built-in image editor and content templates for quick post creation"
-      },
-      {
-        icon: "🤖",
-        title: "Auto Engagement",
-        description: "Automated likes, follows, and comments based on custom rules"
+        icon: "📝",
+        title: "Community Blog",
+        description: "Publish articles and updates to engage the community and improve SEO visibility."
       },
       {
         icon: "📱",
-        title: "Multi-Platform",
-        description: "Support for Facebook, Instagram, Twitter, LinkedIn, and TikTok"
+        title: "Fully Responsive",
+        description: "A seamless experience on desktops, tablets, and mobile devices, built with a mobile-first approach."
       }
     ],
-    liveLink: "https://socialtool-demo.com",
-    githubLink: "https://github.com/archford/social-media-tool",
-    status: "Completed",
-    duration: "5 months",
-    role: "Full Stack Developer",
+    liveLink: "https://trotsbasket.com/",
+    githubLink: "#",
+    status: "Inprogess",
+    duration: "2 months",
+    role: "Frontend Developer",
     challenges: [
-      "Integrating with multiple social media APIs and handling rate limits",
-      "Building a flexible scheduling system across different time zones",
-      "Creating a user-friendly content creation interface",
-      "Implementing secure OAuth flows for multiple platforms"
+      "Designing and implementing a complex, multi-step form for business listings and advert creation.",
+      "Ensuring a consistent and responsive layout across a wide variety of device screen sizes.",
+      "Managing complex state for user data, business profiles, and advert campaigns efficiently.",
+      "Optimizing frontend performance for fast loading times and smooth interactions."
     ],
     learnings: [
-      "Angular advanced patterns and reactive programming with RxJS",
-      "NestJS decorators and dependency injection patterns",
-      "OAuth 2.0 implementation and security best practices",
-      "Queue management and background job processing"
-    ]
-  },
-  {
-    id: 5,
-    name: "Blockchain Voting System",
-    shortDescription: "Secure and transparent voting platform built on blockchain technology",
-    fullDescription: "A revolutionary voting system that leverages blockchain technology to ensure transparency, security, and immutability of electoral processes. The platform provides end-to-end encryption, real-time vote counting, and complete audit trails. Designed for organizations, institutions, and governments seeking modernized voting solutions.",
-    images: [
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-    ],
-    techStack: [
-      { name: "React", category: "Frontend", color: "#61DAFB" },
-      { name: "Solidity", category: "Blockchain", color: "#363636" },
-      { name: "Web3.js", category: "Blockchain", color: "#F16822" },
-      { name: "Ethereum", category: "Blockchain", color: "#627EEA" },
-      { name: "IPFS", category: "Storage", color: "#65C2CB" },
-      { name: "MetaMask", category: "Wallet", color: "#F6851B" },
-      { name: "Hardhat", category: "Development", color: "#FFF100" },
-      { name: "Node.js", category: "Backend", color: "#339933" }
-    ],
-    features: [
-      {
-        icon: "🗳️",
-        title: "Secure Voting",
-        description: "Cryptographically secure voting with end-to-end encryption"
-      },
-      {
-        icon: "🔍",
-        title: "Transparent Auditing",
-        description: "Complete transparency with public audit trails on blockchain"
-      },
-      {
-        icon: "⚡",
-        title: "Real-time Results",
-        description: "Instant vote counting and real-time result updates"
-      },
-      {
-        icon: "🔐",
-        title: "Voter Authentication",
-        description: "Multi-factor authentication ensuring eligible voter participation"
-      },
-      {
-        icon: "📊",
-        title: "Analytics Dashboard",
-        description: "Comprehensive voting analytics and participation statistics"
-      },
-      {
-        icon: "📱",
-        title: "Mobile Voting",
-        description: "Mobile-optimized interface for convenient voting access"
-      }
-    ],
-    liveLink: "https://blockvote-demo.com",
-    githubLink: "https://github.com/archford/blockchain-voting",
-    status: "Completed",
-    duration: "7 months",
-    role: "Blockchain Developer",
-    challenges: [
-      "Ensuring voter privacy while maintaining transparency",
-      "Optimizing smart contract gas costs for large-scale voting",
-      "Creating intuitive interfaces for non-technical users",
-      "Implementing robust security measures against various attack vectors"
-    ],
-    learnings: [
-      "Advanced Solidity programming and smart contract security",
-      "Ethereum blockchain development and deployment strategies",
-      "Cryptographic principles and privacy-preserving techniques",
-      "Web3 integration and decentralized application architecture"
+      "Advanced state management patterns using React Context and hooks for a large-scale application.",
+      "Mastering responsive design principles and CSS frameworks (Tailwind CSS) to build fluid layouts.",
+      "Implementing efficient data fetching, caching, and synchronization with React Query.",
+      "Enhancing user experience with modern UI/UX practices and subtle animations using Framer Motion."
     ]
   }
+,
+{
+  id: 3,
+  name: "Radid Construction",
+  shortDescription: "A modern, responsive website for a construction company showcasing their portfolio and services.",
+  fullDescription: "A sleek and professional website designed for EliteBuild Construction to establish a strong online presence. The site effectively communicates the company's expertise, showcases their high-quality projects through an interactive gallery, and provides an easy way for potential clients to get in touch. I developed the entire frontend, focusing on a clean design, smooth animations, and a fully responsive layout that looks impeccable on all devices.",
+  images: [
+    radid01,
+    radid02,
+    radid03,
+    radid04
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "DaisyUI", category: "Component Library", color: "#5A0FC8" },
+    { name: "Framer Motion", category: "Animation", color: "#000000" },
+    { name: "React Hook Form", category: "Forms", color: "#EC5990" },
+    { name: "React Icons", category: "Icons", color: "#E91E63" }
+  ],
+  features: [
+    {
+      icon: "🏗️",
+      title: "Service Showcase",
+      description: "A dedicated section to highlight the company's core construction and renovation services."
+    },
+    {
+      icon: "🖼️",
+      title: "Project Gallery",
+      description: "An interactive, filterable gallery to showcase completed construction projects with high-quality images."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "A flawlessly responsive design that ensures a perfect experience on desktop, tablet, and mobile."
+    },
+    {
+      icon: "✨",
+      title: "Smooth Animations",
+      description: "Engaging and polished page transitions and micro-interactions using Framer Motion."
+    },
+    {
+      icon: "📧",
+      title: "Contact Form",
+      description: "A user-friendly contact form with validation for generating new client leads."
+    },
+    {
+      icon: "⚡",
+      title: "Fast Performance",
+      description: "Optimized for speed and SEO, ensuring quick load times and better search engine visibility."
+    }
+  ],
+  liveLink: "https://radid-constructions.vercel.app/",
+  githubLink: "#",
+  status: "Completed",
+  duration: "2 Weeks",
+  role: "Frontend Developer",
+  challenges: [
+    "Designing and implementing a responsive image gallery that maintains aspect ratios across different screen sizes.",
+    "Creating meaningful and performant animations with Framer Motion without compromising site speed.",
+    "Utilizing DaisyUI's component classes effectively alongside custom Tailwind CSS styling for a unique design.",
+    "Ensuring the website conveys strength and professionalism while remaining modern and approachable."
+  ],
+  learnings: [
+    "Advanced techniques for combining Tailwind CSS with component libraries like DaisyUI.",
+    "Mastering Framer Motion for creating complex animations and gesture-based interactions.",
+    "Best practices for image optimization and responsive design in a media-heavy website.",
+    "Improving SEO and accessibility for business websites to reach a wider audience."
+  ]
+},
+{
+  id: 4,
+  name: "E-commerce store",
+  shortDescription: "A custom-built e-commerce platform for handmade goods, facilitating sales through WhatsApp.",
+  fullDescription: "A bespoke e-commerce website developed for a client specializing in handmade crafts. The platform features a clean, product-focused design with a grid display, advanced filtering, and a fully functional cart. The unique checkout process is handled directly via WhatsApp, where users can send their cart to discuss customizations and get price quotations. I was responsible for the full design, frontend development, and deployment, creating a seamless bridge between browsing products and initiating a personalized conversation with the business owner.",
+  images: [
+    mara01,
+    mara02,
+    mara03,
+    mara04
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "JavaScript (ES6+)", category: "Frontend", color: "#F7DF1E" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "Neon Postgres", category: "Database", color: "#336791" },
+    { name: "Vercel", category: "Deployment", color: "#000000" },
+    { name: "WhatsApp API", category: "Integration", color: "#25D366" }
+  ],
+  features: [
+    {
+      icon: "🛍️",
+      title: "Product Catalog",
+      description: "Beautiful grid layout showcasing products with high-quality images and detailed descriptions."
+    },
+    {
+      icon: "🛒",
+      title: "Add to Cart",
+      description: "Full cart functionality allowing users to add, remove, and update quantities of items."
+    },
+    {
+      icon: "🔍",
+      title: "Search & Filters",
+      description: "Advanced filtering by category, price, and other attributes to easily find products."
+    },
+    {
+      icon: "💬",
+      title: "WhatsApp Checkout",
+      description: "Directly send the cart contents via WhatsApp to get a quote and complete the purchase."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "A seamless shopping experience on any device, from desktop to mobile."
+    },
+    {
+      icon: "⚡",
+      title: "Fast Performance",
+      description: "Optimized and deployed on Vercel for lightning-fast load times and a smooth user experience."
+    }
+  ],
+  liveLink: "https://www.marangasei-market.co.za/",
+  githubLink: "#",
+  status: "Completed",
+  duration: "1 months",
+  role: "Full Stack Developer",
+  challenges: [
+    "Designing an intuitive user flow that seamlessly transitions from the website to a WhatsApp conversation.",
+    "Managing complex client-side state for the shopping cart without a dedicated state management library.",
+    "Ensuring the product data from the Neon Postgres database was efficiently fetched and displayed.",
+    "Creating a responsive product grid that adapts beautifully to all screen sizes."
+  ],
+  learnings: [
+    "Advanced React hooks for state and effect management in a real-world application.",
+    "Integration of third-party APIs (WhatsApp) to create unique user workflows.",
+    "Deployment and serverless database management using Vercel and Neon Postgres.",
+    "Client communication and project customization based on specific requirements and feedback."
+  ]
+},
+{
+  id: 5,
+  name: "Gold4africa",
+  shortDescription: "An elegant and luxurious website for a gold investment firm, designed to build trust and capture user interest.",
+  fullDescription: "A premium, high-converting website for a gold trading and investment company. The design emphasizes luxury, stability, and trust through a sophisticated color palette, smooth animations, and a polished user experience. The 7-page site effectively communicates the value proposition of investing in gold, showcases market insights, and provides easy pathways for potential clients to engage. I developed the entire frontend, focusing on performance, visual appeal, and creating a seamless journey from visitor to lead.",
+  images: [
+    gol01,
+    gol02,
+    gol03,
+    gol04
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "JavaScript (ES6+)", category: "Frontend", color: "#F7DF1E" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "Framer Motion", category: "Animation", color: "#000000" },
+    { name: "React Router", category: "Routing", color: "#CA4245" },
+    { name: "React Icons", category: "Icons", color: "#E91E63" }
+  ],
+  features: [
+    {
+      icon: "✨",
+      title: "Immersive Animations",
+      description: "Subtle and elegant page transitions and scroll-triggered animations using Framer Motion to enhance user engagement."
+    },
+    {
+      icon: "🏛️",
+      title: "Multi-page Layout",
+      description: "A comprehensive 7-page structure including Home, About, Services, Market, Gallery, Blog, and Contact."
+    },
+    {
+      icon: "📊",
+      title: "Live Gold Price Ticker",
+      description: "A dynamic display of real-time (or daily) gold prices to provide immediate value to visitors."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "A flawless experience across all devices, ensuring accessibility for all potential clients."
+    },
+    {
+      icon: "✉️",
+      title: "Lead Capture Forms",
+      description: "Strategically placed contact forms and call-to-actions to convert visitors into qualified leads."
+    },
+    {
+      icon: "⚡",
+      title: "Optimized Performance",
+      description: "Fast-loading pages and smooth interactions, crucial for maintaining a premium user experience."
+    }
+  ],
+  liveLink: "https://www.gold4africa.com/",
+  githubLink: "#",
+  status: "Completed",
+  duration: "1 week",
+  role: "Frontend Developer",
+  challenges: [
+    "Creating a visual identity that conveys luxury and trustworthiness through UI and animations.",
+    "Managing complex page transitions and animation sequences across 7 different pages without performance loss.",
+    "Designing a responsive layout that maintains its elegance and impact on both mobile and desktop views.",
+    "Integrating dynamic content, like a price ticker, in a way that feels seamless and professional."
+  ],
+  learnings: [
+    "Advanced animation choreography and timing with Framer Motion to create a premium feel.",
+    "Best practices for multi-page React application structure and routing.",
+    "Techniques for optimizing website performance and load times for image-heavy, animated sites.",
+    "UI/UX principles for designing high-stakes financial or investment websites that require building user trust."
+  ]
+}
 ];
 
 export default projects;
