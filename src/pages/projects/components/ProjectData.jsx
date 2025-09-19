@@ -110,7 +110,7 @@ const projects = [
     id: 2,
     name: "Business Marketing App",
     shortDescription: "A dynamic marketing platform for businesses to list services, post adverts, and engage with their community.",
-    fullDescription: "BizConnect Hub is a comprehensive marketing and community engagement platform designed to bridge the gap between businesses and customers. Businesses can create detailed listings, publish promotional adverts, and gain valuable insights through customer reviews and ratings. The platform fosters community interaction via a built-in blog and enhances business visibility through a searchable public directory. I was responsible for architecting and developing the entire responsive frontend, ensuring an intuitive and seamless user experience across all devices.",
+    fullDescription: "Trotsbasket is a comprehensive marketing and community engagement platform designed to bridge the gap between businesses and customers. Businesses can create detailed listings, publish promotional adverts, and gain valuable insights through customer reviews and ratings. The platform fosters community interaction via a built-in blog and enhances business visibility through a searchable public directory. I was responsible for architecting and developing the entire responsive frontend, ensuring an intuitive and seamless user experience across all devices.",
     images: [
       trots01,
       trots02,
