@@ -1,11 +1,19 @@
+import project01 from "../../../assets/images/thread.png";
+import project02 from "../../../assets/images/gigbee.png";
+import project03 from "../../../assets/images/chats.png";
+import project04 from "../../../assets/images/radid.png";
+import project05 from "../../../assets/images/gold.png";
+import project06 from "../../../assets/images/medical.png";
+import project07 from "../../../assets/images/marangesi.png";
+import project08 from "../../../assets/images/dolphine.png";
 const projects = [
   {
     id: 1,
-    name: "E-Commerce Platform",
+    name: "Job Freelance App",
     shortDescription: "A full-featured e-commerce platform built with modern web technologies",
     fullDescription: "This comprehensive e-commerce platform provides a complete shopping experience with advanced features like real-time inventory management, secure payment processing, and an intuitive admin dashboard. The application is built with scalability in mind, featuring microservices architecture and cloud deployment capabilities.",
     images: [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      project02,
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       "https://images.unsplash.com/photo-1556742111-a301076d9d18?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
@@ -17,8 +25,8 @@ const projects = [
       { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
       { name: "Express.js", category: "Backend", color: "#000000" },
       { name: "JWT", category: "Authentication", color: "#000000" },
-      { name: "Stripe API", category: "Payment", color: "#635BFF" },
-      { name: "AWS S3", category: "Storage", color: "#FF9900" }
+      // { name: "Stripe API", category: "Payment", color: "#635BFF" },
+      // { name: "AWS S3", category: "Storage", color: "#FF9900" }
     ],
     features: [
       {
@@ -62,8 +70,8 @@ const projects = [
         description: "Automated email notifications for orders, shipping, and promotions"
       }
     ],
-    liveLink: "https://ecommerce-demo.com",
-    githubLink: "https://github.com/archford/ecommerce-platform",
+    liveLink: "https://simba-2nc0.onrender.com/login",
+    githubLink: "#",
     status: "Completed",
     duration: "3 months",
     role: "Full Stack Developer",
