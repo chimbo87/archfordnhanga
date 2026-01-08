@@ -23,6 +23,10 @@ import gol01 from "../../../assets/images/gol01.png";
 import gol02 from "../../../assets/images/gol02.png";
 import gol03 from "../../../assets/images/gol03.png";
 import gol04 from "../../../assets/images/gol04.png";
+
+import cake01 from "../../../assets/images/sta01.png";
+import cake02 from "../../../assets/images/sta02.png";
+
 const projects = [
   {
     id: 1,
@@ -382,6 +386,78 @@ const projects = [
     "Best practices for multi-page React application structure and routing.",
     "Techniques for optimizing website performance and load times for image-heavy, animated sites.",
     "UI/UX principles for designing high-stakes financial or investment websites that require building user trust."
+  ]
+},
+{
+  id: 6,
+  name: "Stanely Cakes n Doughnuts",
+  shortDescription: "A sweet and delightful e-commerce website for a confectionery business, enabling customers to browse treats and place orders seamlessly.",
+  fullDescription: "A fully-functional e-commerce platform for a cakes and doughnuts business built with modern web technologies. The website features an appealing, appetite-stimulating design with smooth user interactions. Customers can browse delicious products, add items to cart, and complete purchases through an intuitive checkout process. The backend integrates with a PostgreSQL database via Neon DB for reliable data management. I developed the entire application, focusing on creating an engaging shopping experience, secure user authentication, and efficient order management system.",
+  images: [
+    // Replace with your actual image imports/variables
+    cake01,
+    cake02
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "JavaScript (ES6+)", category: "Frontend", color: "#F7DF1E" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "React Router", category: "Routing", color: "#CA4245" },
+    { name: "Neon DB", category: "Database", color: "#336791" },
+    { name: "PostgreSQL", category: "Database", color: "#336791" },
+    { name: "React Icons", category: "Icons", color: "#E91E63" },
+    { name: "Context API", category: "State Management", color: "#FF6B6B" }
+  ],
+  features: [
+    {
+      icon: "🛒",
+      title: "Product Catalog",
+      description: "Beautifully displayed cakes and doughnuts with categories, filters, and detailed product pages."
+    },
+    {
+      icon: "🧺",
+      title: "Shopping Cart",
+      description: "Persistent cart functionality allowing users to add, remove, and update quantities of items."
+    },
+    {
+      icon: "🔐",
+      title: "User Authentication",
+      description: "Secure user registration, login, and profile management for personalized shopping experiences."
+    },
+    {
+      icon: "💳",
+      title: "Checkout System",
+      description: "Streamlined checkout process with order summary, shipping details, and payment integration."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "Perfect shopping experience across all devices, from mobile phones to desktop computers."
+    },
+    {
+      icon: "📊",
+      title: "Admin Dashboard",
+      description: "Backend interface for managing products, orders, and customer information."
+    }
+  ],
+  liveLink: "https://stanley-gamma.vercel.app/products", // Replace with your actual link
+  githubLink: "#", // Add your GitHub link
+  status: "Completed",
+  duration: "2-3 weeks", // Adjust based on actual duration
+  role: "Full Stack Developer",
+  challenges: [
+    "Designing an appealing UI that showcases food items in an appetizing way while maintaining fast load times.",
+    "Implementing a robust shopping cart that persists across sessions without compromising performance.",
+    "Integrating backend database operations with a responsive frontend for real-time inventory management.",
+    "Creating a secure user authentication system and protecting sensitive customer data.",
+    "Developing an intuitive admin interface for non-technical business owners to manage their store."
+  ],
+  learnings: [
+    "Full-stack development with React frontend and PostgreSQL database integration via Neon DB.",
+    "E-commerce best practices including cart management, user flow optimization, and secure transactions.",
+    "Database schema design for managing products, users, orders, and inventory.",
+    "Performance optimization techniques for media-rich e-commerce sites.",
+    "State management patterns for complex applications using React Context API."
   ]
 }
 ];
