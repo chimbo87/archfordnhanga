@@ -36,6 +36,18 @@ import wed02 from "../../../assets/images/wed02.png";
 import wed03 from "../../../assets/images/wed03.png";
 import wed04 from "../../../assets/images/wed04.png";
 
+import glow01 from "../../../assets/images/glow01.png";
+import glow02 from "../../../assets/images/glow02.png";
+import glow03 from "../../../assets/images/glow03.png";
+import glow04 from "../../../assets/images/glow04.png";
+import glow05 from "../../../assets/images/glow05.png";
+import glow06 from "../../../assets/images/glow06.png";
+
+import ada01 from "../../../assets/images/ada01.png";
+import ada02 from "../../../assets/images/ada02.png";
+import ada03 from "../../../assets/images/ada03.png";
+import ada04 from "../../../assets/images/wed04.png";
+
 const projects = [
   {
     id: 1,
@@ -120,76 +132,82 @@ const projects = [
   },
 
   {
-    id: 2,
-    name: "Business Marketing App",
-    shortDescription: "A dynamic marketing platform for businesses to list services, post adverts, and engage with their community.",
-    fullDescription: "Trotsbasket is a comprehensive marketing and community engagement platform designed to bridge the gap between businesses and customers. Businesses can create detailed listings, publish promotional adverts, and gain valuable insights through customer reviews and ratings. The platform fosters community interaction via a built-in blog and enhances business visibility through a searchable public directory. I was responsible for architecting and developing the entire responsive frontend, ensuring an intuitive and seamless user experience across all devices.",
+    id: 9,
+    name: "GlowIt (GrowIt)",
+    shortDescription: "A next-gen marketplace where users earn by sharing products, services, or adverts. Features a unique affiliate model, dark/light mode, and a responsive design — currently in active development.",
+    fullDescription: "GlowIt (branded as GrowIt) is an innovative marketplace platform that redefines e-commerce by combining shopping with an affiliate earning system. Users can post products, services, or adverts, while others can share any listing to earn commissions. The platform features a dual earning path: sellers pay a flat fee or commission, while affiliates earn per view or sale. Built as a work-in-progress MVP, the site already showcases key metrics (50K+ users, $250K+ earnings), a transparent commission structure, and a modern UI with dark/light mode toggling. The goal is to create an ecosystem where everyone — from businesses to casual users — wins by participating.",
     images: [
-      trots01,
-      trots02,
-      trots03,
-      trots04
+      // Replace with actual screenshots of GlowIt
+      glow01,
+      glow02,
+      glow03,
+      glow04,
+      glow05,
+      glow06
     ],
     techStack: [
       { name: "React", category: "Frontend", color: "#61DAFB" },
-      { name: "TypeScript", category: "Frontend", color: "#3178C6" },
-      { name: "Context API", category: "State Management", color: "#6D31C6" },
-      { name: "React Query", category: "Data Fetching", color: "#FF4154" },
       { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
-      { name: "React Hook Form", category: "Forms", color: "#EC5990" },
-      { name: "Framer Motion", category: "Animation", color: "#000000" }
+      { name: "Radix UI", category: "Component Library", color: "#6E56CF" },
+      { name: "Dark/Light Mode", category: "Feature", color: "#FBBF24" },
+      { name: "Vercel", category: "Hosting", color: "#000000" },
+      { name: "React Router", category: "Routing", color: "#CA4245" },
+      { name: "Framer Motion", category: "Animations", color: "#0055FF" } // optional, if used
     ],
     features: [
       {
-        icon: "🏢",
-        title: "Business Listings",
-        description: "Businesses can create and manage detailed public profiles with services, hours, and contact info."
+        icon: "🛒",
+        title: "Dual Marketplace",
+        description: "Post adverts ($10 flat), products (5% fee), or services (5% booking fee). Affiliates share any listing."
       },
       {
-        icon: "📢",
-        title: "Advert Management",
-        description: "Create, schedule, and publish targeted promotional campaigns to reach a wider audience."
+        icon: "💰",
+        title: "Share & Earn Model",
+        description: "Affiliates earn $0.30 per advert view, 2-5% on product sales, 3-5% on service bookings, and $0.50 per referral."
       },
       {
-        icon: "⭐",
-        title: "Reviews & Ratings",
-        description: "Customers can leave feedback and ratings, providing social proof and valuable insights for businesses."
+        icon: "🌓",
+        title: "Dark / Light Mode",
+        description: "Fully implemented theme toggle using Tailwind CSS and Radix UI components for a seamless user preference experience."
       },
       {
-        icon: "📈",
-        title: "Insights Dashboard",
-        description: "Businesses get analytics on advert performance, customer engagement, and review trends."
+        icon: "📊",
+        title: "Real-Time Stats Dashboard",
+        description: "Displays live platform metrics: 50K+ active users, $250K+ earnings paid, 10K+ listings, 100K+ shares."
       },
       {
-        icon: "📝",
-        title: "Community Blog",
-        description: "Publish articles and updates to engage the community and improve SEO visibility."
+        icon: "💵",
+        title: "Instant Payout System",
+        description: "Users can withdraw earnings via bank transfer, mobile airtime, or card instantly."
       },
       {
         icon: "📱",
         title: "Fully Responsive",
-        description: "A seamless experience on desktops, tablets, and mobile devices, built with a mobile-first approach."
+        description: "Mobile-first design ensures seamless experience across all devices — crucial for sharing on social media."
       }
     ],
-    liveLink: "https://trotsbasket.com/",
-    githubLink: "#",
-    status: "Inprogess",
-    duration: "2 months",
-    role: "Frontend Developer",
+    liveLink: "https://glowit-flax.vercel.app/",
+    githubLink: "#", // Add your GitHub link if available
+    status: "Work in Progress (MVP Live)",
+    duration: "Ongoing — initial MVP ~ 4-6 weeks",
+    role: "Frontend Developer & UI Designer",
     challenges: [
-      "Designing and implementing a complex, multi-step form for business listings and advert creation.",
-      "Ensuring a consistent and responsive layout across a wide variety of device screen sizes.",
-      "Managing complex state for user data, business profiles, and advert campaigns efficiently.",
-      "Optimizing frontend performance for fast loading times and smooth interactions."
+      "Designing a clear, trust-building UI for a complex earning model (different fees per listing type).",
+      "Implementing dark/light mode consistently across all components without visual glitches.",
+      "Creating a responsive layout that handles data-heavy tables (commission structure) on mobile.",
+      "Balancing feature richness with performance for the MVP launch.",
+      "Designing an intuitive user flow for both 'sellers' and 'sharers' with minimal onboarding friction."
     ],
     learnings: [
-      "Advanced state management patterns using React Context and hooks for a large-scale application.",
-      "Mastering responsive design principles and CSS frameworks (Tailwind CSS) to build fluid layouts.",
-      "Implementing efficient data fetching, caching, and synchronization with React Query.",
-      "Enhancing user experience with modern UI/UX practices and subtle animations using Framer Motion."
+      "Deepened expertise in Tailwind CSS theming for dark/light mode with persistent user preferences.",
+      "Gained experience using Radix UI primitives for accessible, unstyled components that integrate with Tailwind.",
+      "Learned to present multi-tiered commission structures in a clean, scannable table format.",
+      "Improved skills in building responsive layouts for marketplace-style dashboards and stat cards.",
+      "Understood MVP trade-offs — focusing on core earning loops before adding complex backend features."
     ]
   }
-,
+  ,
+
 {
   id: 3,
   name: "Radid Construction",
@@ -611,6 +629,149 @@ const projects = [
     "Building complex form logic for custom quotes without backend infrastructure.",
     "Creating reusable portfolio card components that maintain consistency across different event types (weddings, bridal showers, corporate).",
     "Implementing smooth scroll-triggered animations to enhance the storytelling experience."
+  ]
+},
+
+{
+  id: 10,
+  name: "Business Marketing App",
+  shortDescription: "A dynamic marketing platform for businesses to list services, post adverts, and engage with their community.",
+  fullDescription: "Trotsbasket is a comprehensive marketing and community engagement platform designed to bridge the gap between businesses and customers. Businesses can create detailed listings, publish promotional adverts, and gain valuable insights through customer reviews and ratings. The platform fosters community interaction via a built-in blog and enhances business visibility through a searchable public directory. I was responsible for architecting and developing the entire responsive frontend, ensuring an intuitive and seamless user experience across all devices.",
+  images: [
+    trots01,
+    trots02,
+    trots03,
+    trots04
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "TypeScript", category: "Frontend", color: "#3178C6" },
+    { name: "Context API", category: "State Management", color: "#6D31C6" },
+    { name: "React Query", category: "Data Fetching", color: "#FF4154" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "React Hook Form", category: "Forms", color: "#EC5990" },
+    { name: "Framer Motion", category: "Animation", color: "#000000" }
+  ],
+  features: [
+    {
+      icon: "🏢",
+      title: "Business Listings",
+      description: "Businesses can create and manage detailed public profiles with services, hours, and contact info."
+    },
+    {
+      icon: "📢",
+      title: "Advert Management",
+      description: "Create, schedule, and publish targeted promotional campaigns to reach a wider audience."
+    },
+    {
+      icon: "⭐",
+      title: "Reviews & Ratings",
+      description: "Customers can leave feedback and ratings, providing social proof and valuable insights for businesses."
+    },
+    {
+      icon: "📈",
+      title: "Insights Dashboard",
+      description: "Businesses get analytics on advert performance, customer engagement, and review trends."
+    },
+    {
+      icon: "📝",
+      title: "Community Blog",
+      description: "Publish articles and updates to engage the community and improve SEO visibility."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "A seamless experience on desktops, tablets, and mobile devices, built with a mobile-first approach."
+    }
+  ],
+  liveLink: "https://trotsbasket.com/",
+  githubLink: "#",
+  status: "Inprogess",
+  duration: "2 months",
+  role: "Frontend Developer",
+  challenges: [
+    "Designing and implementing a complex, multi-step form for business listings and advert creation.",
+    "Ensuring a consistent and responsive layout across a wide variety of device screen sizes.",
+    "Managing complex state for user data, business profiles, and advert campaigns efficiently.",
+    "Optimizing frontend performance for fast loading times and smooth interactions."
+  ],
+  learnings: [
+    "Advanced state management patterns using React Context and hooks for a large-scale application.",
+    "Mastering responsive design principles and CSS frameworks (Tailwind CSS) to build fluid layouts.",
+    "Implementing efficient data fetching, caching, and synchronization with React Query.",
+    "Enhancing user experience with modern UI/UX practices and subtle animations using Framer Motion."
+  ]
+},
+{
+  id: 11,
+  name: "Alden Advisory (Alden Business Consultancy)",
+  shortDescription: "A London-based firm of qualified accountants offering audit, tax planning, VAT, payroll, and business consultancy services — with fixed-fee pricing and cloud accounting expertise.",
+  fullDescription: "A professional, trust-driven website for Alden Business Consultancy, a firm of certified accountants serving UK businesses and individuals. The site presents a comprehensive range of financial services including bookkeeping, accounting, tax planning, VAT compliance, payroll, self-assessment, financial planning, and business advisory. Key features include clear service categorization (with pricing indicators like 'From £150'), client testimonials, an FAQ section, and a strong emphasis on compliance (HMRC, MTD, GDPR). The design balances informational density with a clean, corporate aesthetic — ideal for building credibility with SMEs, startups, and freelancers.",
+  images: [
+    // Replace with actual screenshots of Alden Advisory
+    ada01,
+    ada02,
+    ada03
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "Radix UI", category: "Component Library", color: "#6E56CF" },
+    { name: "React Router", category: "Routing", color: "#CA4245" },
+    { name: "Framer Motion", category: "Animations", color: "#0055FF" },
+    { name: "EmailJS / Contact Form", category: "Lead Capture", color: "#E65C00" },
+    { name: "React Hook Form", category: "Forms", color: "#EC5990" }
+  ],
+  features: [
+    {
+      icon: "📊",
+      title: "Service Showcase",
+      description: "Eight core service areas (Bookkeeping, Accounting, Tax, VAT, Payroll, Planning, Self-Assessment, Advisory) with pricing indicators and HMRC compliance badges."
+    },
+    {
+      icon: "⭐",
+      title: "Trust Signals",
+      description: "Client testimonials, satisfaction metrics (4.9/5, 99% retention), years of experience (10+), and partner logos (Xero, QuickBooks, Sage)."
+    },
+    {
+      icon: "📞",
+      title: "Consultation Booking",
+      description: "Clear CTAs for free consultations, with phone, email, and a contact form for inquiries."
+    },
+    {
+      icon: "📰",
+      title: "Industry Insights & FAQ",
+      description: "A blog/news section for tax updates and a detailed FAQ accordion for common accounting questions."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "Mobile-friendly layout that presents complex service tables and pricing clearly on all devices."
+    },
+    {
+      icon: "🔒",
+      title: "Compliance Badges",
+      description: "Visual indicators for HMRC compliance, Making Tax Digital (MTD), GDPR, and secure data protection."
+    }
+  ],
+  liveLink: "https://www.aldenadvisory.co.uk/",
+  githubLink: "#", // Add your GitHub link if applicable
+  status: "Completed",
+  duration: "3-4 weeks",
+  role: "Frontend Developer & UI Designer",
+  challenges: [
+    "Organizing a wide range of accounting services (8+ categories) into a scannable, non-overwhelming layout.",
+    "Presenting pricing information ('Fixed fee', 'From £150', 'Per employee') without making the site feel like a price list.",
+    "Building trust through UI — using certifications, client counts, and testimonials effectively without clutter.",
+    "Creating a responsive accordion FAQ that handles long-form accounting questions cleanly on mobile.",
+    "Designing a professional color scheme that feels corporate but not cold, approachable but not casual."
+  ],
+  learnings: [
+    "Structuring service-based B2B content for maximum lead conversion (clear CTAs, trust signals, low friction contact).",
+    "Using Radix UI primitives to build accessible accordions and tabs for the FAQ and service categories.",
+    "Implementing a dark/light mode toggle that maintains readability for financial data and tables.",
+    "Balancing visual design with informational density — critical for professional services websites.",
+    "Integrating form validation and submission handling for consultation requests without a full backend."
   ]
 }
 ];
