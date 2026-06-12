@@ -27,6 +27,15 @@ import gol04 from "../../../assets/images/gol04.png";
 import cake01 from "../../../assets/images/sta01.png";
 import cake02 from "../../../assets/images/sta02.png";
 
+import alter01 from "../../../assets/images/ater01.png";
+import alter02 from "../../../assets/images/alter02.png";
+import alter03 from "../../../assets/images/alter03.png";
+
+import wed01 from "../../../assets/images/wed01.png";
+import wed02 from "../../../assets/images/wed02.png";
+import wed03 from "../../../assets/images/wed03.png";
+import wed04 from "../../../assets/images/wed04.png";
+
 const projects = [
   {
     id: 1,
@@ -91,7 +100,7 @@ const projects = [
         description: "Detailed earnings reports and performance analytics for freelancers"
       }
     ],
-    liveLink: "https://simba-2nc0.onrender.com/login",
+    liveLink: "https://www.gigbee.work/",
     githubLink: "#",
     status: "Inprogress",
     duration: "3 months",
@@ -232,7 +241,7 @@ const projects = [
       description: "Optimized for speed and SEO, ensuring quick load times and better search engine visibility."
     }
   ],
-  liveLink: "https://radid-constructions.vercel.app/",
+  liveLink: "https://www.radid.co.zw/",
   githubLink: "#",
   status: "Completed",
   duration: "2 Weeks",
@@ -440,7 +449,7 @@ const projects = [
       description: "Backend interface for managing products, orders, and customer information."
     }
   ],
-  liveLink: "https://stanley-gamma.vercel.app/products", // Replace with your actual link
+  liveLink: "https://www.stanelycakesanddoughnuts.co.zw/", // Replace with your actual link
   githubLink: "#", // Add your GitHub link
   status: "Completed",
   duration: "2-3 weeks", // Adjust based on actual duration
@@ -458,6 +467,150 @@ const projects = [
     "Database schema design for managing products, users, orders, and inventory.",
     "Performance optimization techniques for media-rich e-commerce sites.",
     "State management patterns for complex applications using React Context API."
+  ]
+},
+{
+  id: 7,
+  name: "Alketaal Timbers",
+  shortDescription: "A SAZ-certified forestry and timber treatment business — supplying Creosote poles, CCA poles, mining timber, and more to Zimbabwe and Botswana at competitive prices.",
+  fullDescription: "A professional web platform for Alketaal Timbers, a SAZ-certified supplier of treated timber products. The website showcases their range of Creosote poles, CCA-treated poles, mining timber, and construction lumber. It provides clear product categories, technical specifications, and an inquiry system for bulk orders. Built with modern web technologies, the site emphasizes reliability, industrial-grade presentation, and easy contact methods for B2B customers in Zimbabwe and Botswana.",
+  images: [
+    // Replace with your actual timber product images
+    alter01,
+    alter02,
+    alter03
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "JavaScript (ES6+)", category: "Frontend", color: "#F7DF1E" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "React Router", category: "Routing", color: "#CA4245" },
+    { name: "EmailJS / Formspree", category: "Backend", color: "#E65C00" },
+    { name: "Leaflet / Mapbox", category: "Mapping", color: "#3B82F6" },
+    { name: "React Icons", category: "Icons", color: "#E91E63" }
+  ],
+  features: [
+    {
+      icon: "🌲",
+      title: "Product Showcase",
+      description: "Displays treated poles (Creosote, CCA), mining timber, and construction lumber with technical specs."
+    },
+    {
+      icon: "📄",
+      title: "SAZ Certification Badge",
+      description: "Highlights SAZ certification for quality and compliance in timber treatment."
+    },
+    {
+      icon: "📞",
+      title: "Bulk Inquiry System",
+      description: "Contact form and quote request system tailored for B2B timber buyers."
+    },
+    {
+      icon: "🌍",
+      title: "Regional Focus",
+      description: "Clear emphasis on serving Zimbabwe and Botswana with competitive pricing."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive",
+      description: "Works seamlessly on mobile, tablet, and desktop for contractors and procurement teams."
+    },
+    {
+      icon: "📊",
+      title: "Product Categories",
+      description: "Easy navigation between Creosote poles, CCA poles, mining timber, and general construction timber."
+    }
+  ],
+  liveLink: "https://alketaaltimber.co.zw/",
+  githubLink: "#", // Add your GitHub link if applicable
+  status: "Completed",
+  duration: "2-3 weeks",
+  role: "Frontend & Content Developer",
+  challenges: [
+    "Presenting technical timber specifications in a clean, non-technical way for procurement managers.",
+    "Building a fast-loading site with multiple high-quality product images.",
+    "Creating an inquiry system that captures bulk order details without complex backend authentication.",
+    "Designing a layout that feels industrial and trustworthy yet modern."
+  ],
+  learnings: [
+    "Organizing industrial/B2B product catalogs for clarity and ease of use.",
+    "Building lead generation tools (quote request forms) for non-e-commerce businesses.",
+    "Integrating maps and location services to highlight service regions.",
+    "Optimizing performance for image-heavy industrial product galleries."
+  ]
+},
+{
+  id: 8,
+  name: "Bridal Innovations",
+  shortDescription: "Luxury wedding and event planning specialists — offering bespoke decor, floral arrangements, styling, and full-service coordination for weddings, bridal showers, and corporate events in Zimbabwe.",
+  fullDescription: "An elegant, inspiration-driven website for Bridal Innovations, a premium event planning and wedding decor company. The site showcases their portfolio of styled weddings, decor setups, floral designs, and event concepts. Visitors can explore service packages, view real wedding galleries, request quotes, and connect with the team for consultations. Built with a romantic yet modern aesthetic, the website emphasizes visual storytelling, seamless navigation, and a strong emotional connection with brides-to-be and event hosts.",
+  images: [
+    // Replace with actual wedding/event decor images
+    wed01,
+    wed02,
+    wed03,
+    wed04
+  ],
+  techStack: [
+    { name: "React", category: "Frontend", color: "#61DAFB" },
+    { name: "JavaScript (ES6+)", category: "Frontend", color: "#F7DF1E" },
+    { name: "Tailwind CSS", category: "Styling", color: "#38B2AC" },
+    { name: "Framer Motion", category: "Animations", color: "#0055FF" },
+    { name: "React Router", category: "Routing", color: "#CA4245" },
+    { name: "EmailJS", category: "Contact & Quotes", color: "#E65C00" },
+    { name: "React Hook Form", category: "Forms", color: "#EC5990" },
+    { name: "React Lightbox", category: "Gallery", color: "#7C3AED" }
+  ],
+  features: [
+    {
+      icon: "💍",
+      title: "Portfolio Gallery",
+      description: "Stunning image galleries showcasing real weddings, decor setups, floral arrangements, and themed events."
+    },
+    {
+      icon: "📋",
+      title: "Service Packages",
+      description: "Clear presentation of decor packages — from intimate ceremonies to grand receptions — with pricing options."
+    },
+    {
+      icon: "💐",
+      title: "Custom Quote Request",
+      description: "Interactive form for brides and event hosts to request personalized quotes based on guest count, theme, and budget."
+    },
+    {
+      icon: "📅",
+      title: "Consultation Booking",
+      description: "Easy scheduling system for free initial consultations with the planning team."
+    },
+    {
+      icon: "⭐",
+      title: "Testimonials & Real Brides",
+      description: "Social proof section featuring reviews and real wedding stories from past clients."
+    },
+    {
+      icon: "📱",
+      title: "Fully Responsive & Romantic Design",
+      description: "Soft, elegant UI that looks stunning on mobile, tablet, and desktop — perfect for browsing inspiration anywhere."
+    }
+  ],
+  liveLink: "https://www.bridalinnovations.co.zw/",
+  githubLink: "#", // Add your GitHub link if applicable
+  status: "Completed",
+  duration: "3-4 weeks",
+  role: "Frontend Developer & UI Designer",
+  challenges: [
+    "Optimizing high-resolution wedding photography for fast loading without sacrificing image quality.",
+    "Creating a romantic yet professional brand identity that appeals to both brides and corporate event planners.",
+    "Building a quote request system that captures detailed event requirements (guest count, venue type, color themes, etc.).",
+    "Designing a gallery that feels curated and emotional, not cluttered, while still showing range of work.",
+    "Ensuring mobile-first navigation for brides browsing on phones during wedding planning."
+  ],
+  learnings: [
+    "Balancing visual-heavy content with performance optimization (lazy loading, image compression, lightbox galleries).",
+    "Designing for emotional connection — using colors, typography, and layout to evoke trust and romance.",
+    "Building complex form logic for custom quotes without backend infrastructure.",
+    "Creating reusable portfolio card components that maintain consistency across different event types (weddings, bridal showers, corporate).",
+    "Implementing smooth scroll-triggered animations to enhance the storytelling experience."
   ]
 }
 ];
